@@ -28,7 +28,7 @@ jobs:
       run: npm ci
     - name: Build development project
       if: steps.extract_branch.outputs.branch == 'develop'
-      run: npm run development
+      run: npm run build-develop
     - name: Deploy development version
       if: steps.extract_branch.outputs.branch == 'develop'
       run: |
