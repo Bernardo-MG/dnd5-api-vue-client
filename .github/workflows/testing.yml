@@ -40,7 +40,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     - name: Build
-      run: npm run development
+      run: npm run build-develop
 
   test_build_release:
 
