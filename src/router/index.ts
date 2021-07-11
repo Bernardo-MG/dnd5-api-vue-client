@@ -4,13 +4,18 @@ import Index from '../views/Index.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Index',
+    name: 'index',
     component: Index
   },
   {
     path: '/classes',
-    name: 'Classes',
+    name: 'classes',
     component: () => import(/* webpackChunkName: "index" */ '../views/Classes.vue')
+  },
+  {
+    path: '/classes/:name',
+    name: 'class_info',
+    component: () => import(/* webpackChunkName: "index" */ '../views/ClassData.vue')
   }
 ]
 

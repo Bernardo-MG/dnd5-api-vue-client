@@ -10,7 +10,7 @@ import ClassList from '@/components/ClassList.vue'
 import axios from 'axios'
 
 export default defineComponent({
-  name: 'Index',
+  name: 'Classes',
   components: {
     ClassList
   },

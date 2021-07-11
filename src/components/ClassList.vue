@@ -1,9 +1,11 @@
 <template>
   <div>
     Classes list.
-    <li v-for="item in items" :key="item.name">
-      {{ item.name }}
-    </li>
+    <div v-for="item in items" :key="item.index">
+      <router-link :to="{ name: 'class_info', params: { name: item.index } }">
+        {{ item.name }}
+      </router-link>
+    </div>
   </div>
 </template>
 
