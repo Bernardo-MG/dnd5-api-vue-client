@@ -23,7 +23,7 @@ export default defineComponent({
   created() {
     // Simple GET request using axios
     axios
-      .get('https://www.dnd5eapi.co/api/classes/' + this.path)
+      .get('https://www.dnd5eapi.co/api/classes/' + this.$route.params.name)
       .then((response) => (this.data = response.data))
   }
 })
