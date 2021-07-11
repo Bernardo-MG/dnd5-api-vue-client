@@ -1,6 +1,9 @@
 <template>
   <div>
     Classes list.
+    <li v-for="item in items" :key="item.name">
+      {{ item.name }}
+    </li>
   </div>
 </template>
 
@@ -10,7 +13,12 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'ClassList',
   props: {
-    msg: String
+    items: Array
+  },
+  data () {
+    return {
+      counter: this.initialCounter
+    }
   }
 })
 </script>
