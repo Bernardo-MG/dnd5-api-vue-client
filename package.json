@@ -49,7 +49,9 @@
       "parser": "babel-eslint",
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "space-before-function-paren": 0
+    }
   },
   "browserslist": [
     "> 1%",

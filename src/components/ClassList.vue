@@ -15,7 +15,7 @@ export default defineComponent({
   props: {
     items: Array
   },
-  data () {
+  data() {
     return {
       counter: this.initialCounter
     }

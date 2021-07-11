@@ -14,12 +14,12 @@ export default defineComponent({
   components: {
     ClassList
   },
-  data () {
+  data() {
     return {
       classes: []
     }
   },
-  created () {
+  created() {
     // Simple GET request using axios
     axios
       .get('https://www.dnd5eapi.co/api/classes/')
