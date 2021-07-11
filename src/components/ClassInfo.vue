@@ -1,7 +1,6 @@
 <template>
-  <div>
-    Class {{ $route.params.name }}
-  </div>
+  <h1>{{this.data.name}}</h1>
+  <p>Hit Dice: {{this.data.hit_die}}</p>
 </template>
 
 <script lang="ts">
@@ -11,11 +10,6 @@ export default defineComponent({
   name: 'ClassData',
   props: {
     data: Object
-  },
-  data() {
-    return {
-      info: this.data
-    }
   }
 })
 </script>

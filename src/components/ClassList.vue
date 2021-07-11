@@ -16,11 +16,6 @@ export default defineComponent({
   name: 'ClassList',
   props: {
     items: Array
-  },
-  data() {
-    return {
-      counter: this.initialCounter
-    }
   }
 })
 </script>

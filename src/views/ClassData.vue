@@ -12,9 +12,6 @@ export default defineComponent({
   components: {
     ClassInfo
   },
-  props: {
-    path: String
-  },
   data() {
     return {
       data: {}
