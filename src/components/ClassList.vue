@@ -1,11 +1,13 @@
 <template>
   <div>
     Classes list.
-    <div v-for="item in items" :key="item.index">
-      <router-link :to="{ name: 'class_info', params: { name: item.index } }">
-        {{ item.name }}
-      </router-link>
-    </div>
+    <ul>
+      <li v-for="item in items" :key="item.index">
+        <router-link :to="{ name: 'class_info', params: { name: item.index } }">
+          {{ item.name }}
+        </router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
